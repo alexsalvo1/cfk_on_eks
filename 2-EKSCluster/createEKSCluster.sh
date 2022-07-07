@@ -12,3 +12,16 @@ eksctl create cluster \
   --without-nodegroup
 
 echo "EKS Cluster name: $1 CREATED"
+
+#eksctl create nodegroup \
+#  --cluster $1 \
+#  --region eu-west-1 \
+#  --name $1-managed-node-group-large \
+#  --node-type t3.large \
+#  --nodes 3 \
+#  --nodes-min 3 \
+#  --nodes-max 6 \
+#  --ssh-access \
+#  --ssh-public-key salessandro-eks
+
+#echo "Node Group: $1 CREATED"

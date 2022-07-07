@@ -55,9 +55,9 @@ export subnet_public_az_3=$(aws ec2 create-subnet \
 
 echo "Subnets Ids: "$subnet_private_az_1", "$subnet_public_az_1", "$subnet_private_az_2", "$subnet_public_az_2", "$subnet_private_az_3", $subnet_public_az_3"
 
-#igw = $(aws ec2 create-internet-gateway --query InternetGateway.InternetGatewayId --output text)
-#aws ec2 attach-internet-gateway --vpc-id $vpc --internet-gateway-id $igw
-#rtb = $(aws ec2 create-route-table --vpc-id $vpc --query RouteTable.RouteTableId --output text)
+export igw=$(aws ec2 create-internet-gateway --query InternetGateway.InternetGatewayId --output text)
+aws ec2 attach-internet-gateway --vpc-id $vpc --internet-gateway-id $igw
+#rtb=$(aws ec2 create-route-table --vpc-id $vpc --query RouteTable.RouteTableId --output text)
 #aws ec2 create-route --route-table-id $rtb --destination-cidr-block 0.0.0.0/0 --gateway-id $igw
 #aws ec2 describe-route-tables --route-table-id $rtb
 #aws ec2 describe-subnets --filters "Name=vpc-id,Values=$vpc" --query "Subnets[*].{ID:SubnetId,CIDR:CidrBlock}"

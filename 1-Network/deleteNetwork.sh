@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+aws ec2 detach-internet-gateway --vpc-id $vpc --internet-gateway-id $igw
+aws ec2 delete-internet-gateway --internet-gateway-id $igw
+echo "Internet Gateway id: $igw DELETED"; 
+
 id=$(aws ec2 describe-vpcs \
   --filter Name=tag:Name,Values=$1 \
   --query Vpcs[].VpcId \

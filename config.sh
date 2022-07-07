@@ -6,6 +6,7 @@ export region=eu-west-1
 export az_1=eu-west-1a
 export az_2=eu-west-1b
 export az_3=eu-west-1c
+export eksClusterName=eks-cluster-cfk
 
 echo "Default Region: $region"
 echo "Role name: $eksClusterRole"

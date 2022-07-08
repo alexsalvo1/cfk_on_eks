@@ -4,8 +4,8 @@ chmod 744 config.sh
 source ./config.sh
 
 cd "3-CfK"
-chmod 744 deleteCfKonEKS.sh
-source ./deleteCfKonEKS.sh
+chmod 744 deleteCfK.sh
+source ./deleteCfK.sh
 
 cd ../"2-EKSCluster"
 chmod 744 deleteEKSCluster.sh

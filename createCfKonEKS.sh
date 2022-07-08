@@ -15,4 +15,6 @@ cd ../"2-EKSCluster"
 chmod 744 createEKSCluster.sh
 source ./createEKSCluster.sh
 
-cd ..
+cd ../"3-CfK"
+chmod 744 createCfKonEKS.sh
+source ./createCfKonEKS.sh

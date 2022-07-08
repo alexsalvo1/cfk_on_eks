@@ -5,14 +5,14 @@ source ./config.sh
 
 cd "0-Role"
 #chmod 744 createRole.sh
-#source ./createRole.sh $eksClusterRole
+#source ./createRole.sh
 
 cd ../"1-Network"
 chmod 744 createNetwork.sh
-source ./createNetwork.sh $vpc_name
+source ./createNetwork.sh
 
 cd ../"2-EKSCluster"
 chmod 744 createEKSCluster.sh
-source ./createEKSCluster.sh $eksClusterName
+source ./createEKSCluster.sh
 
 cd ..

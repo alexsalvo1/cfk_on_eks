@@ -5,11 +5,11 @@ source ./config.sh
 
 cd "2-EKSCluster"
 chmod 744 deleteEKSCluster.sh
-source ./deleteEKSCluster.sh $eksClusterName
+source ./deleteEKSCluster.sh
 
 cd "../1-Network"
 chmod 744 deleteNetwork.sh
-source ./deleteNetwork.sh $vpc_name
+source ./deleteNetwork.sh
 
 #cd ../"0-Role"
 #chmod 744 deleteRole.sh

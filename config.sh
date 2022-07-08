@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 export eksClusterRole=${1:-eksClusterRole-CfK}
-export vpc_name=${1:-eksVPC-CfK}
+export vpc_name=eksVPC-CfK
 export region=eu-west-1
 export az_1=eu-west-1a
 export az_2=eu-west-1b

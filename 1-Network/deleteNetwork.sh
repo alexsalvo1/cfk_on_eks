@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
 vpc_id=$(aws ec2 describe-vpcs \
-  --filter Name=tag:Name,Values=$1 \
+  --filter Name=tag:Name,Values=$vpc_name \
   --query Vpcs[].VpcId \
   --output text)
 echo "VPC id: $vpc_id"
-echo "VPC name: $1"
+echo "VPC name: $vpc_name"
 
 
 igw_id=$(aws ec2 describe-internet-gateways \
-  --filter Name=tag:Name,Values=$1-igw \
+  --filter Name=tag:Name,Values=$vpc_name-igw \
   --query InternetGateways[].InternetGatewayId \
   --output text)
 echo "IGW id: $igw_id"
@@ -31,7 +31,7 @@ for i in $subnets_ids; do
 done 
 
 rtb_id=$(aws ec2 describe-route-tables \
-  --filter Name=tag:Name,Values=$1-public-subnet-rtb \
+  --filter Name=tag:Name,Values=$vpc_name-public-subnet-rtb \
   --query 'RouteTables[*].RouteTableId' \
   --output text)
 echo "Route tables id: $rtb_id"
@@ -42,4 +42,4 @@ echo "Route table id: $rtb_id DELETED";
 
 aws ec2 delete-vpc \
   --vpc-id $vpc_id
-echo "VPC name: $1 and Subnets DELETED"
+echo "VPC name: $vpc_name and Subnets DELETED"

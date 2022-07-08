@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 aws iam detach-role-policy \
-  --role-name $1 \
+  --role-name $eksClusterRole \
   --policy-arn arn:aws:iam::aws:policy/AmazonEKSClusterPolicy
 
-echo "Policy to Role name: $1 DETACHED"
+echo "Policy to Role name: $eksClusterRole DETACHED"
 
 
 aws iam delete-role \
-  --role-name $1
+  --role-name $eksClusterRole
 
-echo "Role name: $1 DELETED"
+echo "Role name: $eksClusterRole DELETED"

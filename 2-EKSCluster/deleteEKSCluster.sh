@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-aws ec2 delete-key-pair \
-  --key-name $eksClusterName-key
-
 eksctl delete nodegroup \
   --cluster $eksClusterName \
   --region eu-west-1 \
@@ -11,6 +8,9 @@ eksctl delete nodegroup \
 echo "Node Group: $eksClusterName DELETED"
 #  kubectl get svc --all-namespaces (delete all with EXTERNAL_IP)
 #  kubectl delete svc <service-name>
+
+aws ec2 delete-key-pair \
+  --key-name $eksClusterName-key
 
 
 eksctl delete cluster \

@@ -11,6 +11,8 @@ cd "../1-Network"
 chmod 744 deleteNetwork.sh
 source ./deleteNetwork.sh $vpc_name
 
-cd ../"0-Role"
-chmod 744 deleteRole.sh
-source ./deleteRole.sh $eksClusterRole
+#cd ../"0-Role"
+#chmod 744 deleteRole.sh
+#source ./deleteRole.sh $eksClusterRole
+
+cd ..

@@ -14,8 +14,8 @@ eksctl create cluster \
 echo "EKS Cluster name: $eksClusterName CREATED"
 
 
-aws ec2 create-key-pair \
-  --key-name $eksClusterName-key
+key_pair=$(aws ec2 create-key-pair \
+  --key-name $eksClusterName-key)
 
 eksctl create nodegroup \
   --cluster $eksClusterName \

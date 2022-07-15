@@ -1,22 +1,20 @@
 #!/usr/bin/env bash
 
-chmod 744 config.sh
 source ./config.sh
 
 cd "3-CfK"
-chmod 744 deleteCfK.sh
-source ./deleteCfK.sh
+cd ../"3-CfK"
+if $1 = "advanced"
+then
+    source ./deleteCfK.sh 
+else
+    source ./deleteCfK_adv.sh
+fi
 
 cd ../"2-EKSCluster"
-chmod 744 deleteEKSCluster.sh
 source ./deleteEKSCluster.sh
 
 cd ../"1-Network"
-chmod 744 deleteNetwork.sh
 source ./deleteNetwork.sh
-
-#cd ../"0-Role"
-#chmod 744 deleteRole.sh
-#source ./deleteRole.sh $eksClusterRole
 
 cd ..

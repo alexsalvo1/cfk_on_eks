@@ -1,0 +1,16 @@
+apiVersion: platform.confluent.io/v1beta1
+kind: Kafka
+metadata:
+  name: kafka
+  namespace: confluent
+spec:
+  replicas: 3
+  image:
+    application: confluentinc/cp-server:7.2.0
+    init: confluentinc/confluent-init-container:2.4.0
+  dataVolumeCapacity: 10Gi
+  podTemplate:
+    resources:
+      requests:
+        cpu: 500m
+        memory: 0.5G

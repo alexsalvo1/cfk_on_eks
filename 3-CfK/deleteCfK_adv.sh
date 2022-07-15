@@ -5,7 +5,7 @@ readonly resources=./"3-CfK"/resources
 kubectl delete -f https://raw.githubusercontent.com/confluentinc/confluent-kubernetes-examples/master/quickstart-deploy/producer-app-data.yaml
 kubectl wait --for=delete pod/elastic-0 --timeout=60s
 
-kubectl delete -f $resources/zookeper.yaml
+kubectl delete -f $resources/zookeeper.yaml
 kubectl delete -f $resources/broker.yaml
 kubectl delete -f $resources/schema_registry.yaml
 kubectl delete -f $resources/connect.yaml

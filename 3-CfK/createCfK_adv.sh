@@ -3,6 +3,7 @@
 kubectl create namespace $namespace
 kubectl config set-context --current --namespace $namespace
 
+rm -R $cfk_dir
 mkdir -p $cfk_dir
 helm pull confluentinc/confluent-for-kubernetes \
   --untar --untardir=$cfk_dir
@@ -14,7 +15,7 @@ helm repo add confluentinc https://packages.confluent.io/helm
 helm repo update
 helm upgrade --install confluent-operator confluentinc/confluent-for-kubernetes --namespace $namespace
 
-kubectl apply -f $resources/zookeper.yaml
+kubectl apply -f $resources/zookeeper.yaml
 kubectl apply -f $resources/broker.yaml
 kubectl apply -f $resources/schema_registry.yaml
 kubectl apply -f $resources/connect.yaml

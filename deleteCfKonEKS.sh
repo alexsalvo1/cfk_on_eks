@@ -12,9 +12,9 @@ else
 fi
 
 cd ../"2-EKSCluster"
-#source ./deleteEKSCluster.sh
+source ./deleteEKSCluster.sh
 
 cd ../"1-Network"
-#source ./deleteNetwork.sh
+source ./deleteNetwork.sh
 
 cd ..

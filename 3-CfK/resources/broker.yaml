@@ -9,6 +9,10 @@ spec:
     application: confluentinc/cp-server:7.2.0
     init: confluentinc/confluent-init-container:2.4.0
   dataVolumeCapacity: 10Gi
+  configOverrides:
+    server:
+      - auto.create.topics.enable=true
+      - confluent.cluster.link.enable=true
   podTemplate:
     resources:
       requests:

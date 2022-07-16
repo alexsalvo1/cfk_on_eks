@@ -14,13 +14,13 @@ Deploy/undeploy Confluent for Kubernetes on Amazon Elastic Kubernetes Service
 ### Deploy EKS Cluster and Confluent Platform
 
 ```console
-./clusterCfKonEKS.sh
+./clusterCfKonEKS.sh basic
 ```
 
 ## Undeploy EKS Cluster and Confluent Platform
 
 ```console
-./deleteCfKonEKS.sh
+./deleteCfKonEKS.sh basic
 ```
 
 ## Scenario 2: Kubernetes cluster admin and the CFK user are different person

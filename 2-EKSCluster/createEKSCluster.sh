@@ -22,9 +22,9 @@ eksctl create nodegroup \
   --region $region \
   --name $eksClusterName-managed-node-group-large \
   --node-type t3.large \
-  --nodes 3 \
-  --nodes-min 3 \
-  --nodes-max 6 \
+  --nodes 6 \
+  --nodes-min 6 \
+  --nodes-max 9 \
   --ssh-access \
   --ssh-public-key $eksClusterName-key
 

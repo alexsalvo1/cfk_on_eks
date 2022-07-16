@@ -23,9 +23,6 @@ spec:
       - confluent.metrics.reporter.topic.retention.ms=86400000
       - confluent.metrics.reporter.topic.retention.bytes=522752000
       - confluent.reporters.telemetry.auto.enable=false
-    jvm:
-      - “-Xmx2g”
-      - “-Xms1g”
   podTemplate:
     resources:
       requests:

@@ -18,7 +18,7 @@ kubectl delete secret kafka-client-config-secure -n $namespace
 kubectl delete secret ca-pair-sslcerts -n $namespace
 #helm delete operator -n $namespace
 
-kubectl delete namespace $namespace
+#kubectl delete namespace $namespace
 #(
 #NAMESPACE=your-rogue-namespace
 #kubectl proxy &
@@ -27,6 +27,6 @@ kubectl delete namespace $namespace
 #)
 
 rm -Rf sslcerts
-rm producer.config
+rm ./resources/kafka.properties
 #rm -R cfk-dir
 #rm -R confluent-for-kubernetes

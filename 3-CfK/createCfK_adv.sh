@@ -54,7 +54,15 @@ kubectl create secret generic kafka-client-config-secure \
 
 kubectl apply -f ./resources/secure-producer-app-data.yaml -n $namespace
 
-#kafka-console-producer    --topic test    --bootstrap-server kafka.confluent.svc.cluster.local:9092    --property parse.key=true    --property key.separator=,    --producer.config ./producer.config
+#kafka-console-producer    --topic test    --bootstrap-server a941ba45f1d384b4bbb5c82f17eaddf8-471493531.eu-west-1.elb.amazonaws.com:9092    --property parse.key=true    --property key.separator=,    --producer.config ./producer.config
+#kafka-console-producer    --topic test    --bootstrap-server a17b174ba3c254c0d9f5a11b43f37da3-1677581938.eu-west-1.elb.amazonaws.com:9092    --property parse.key=true    --property key.separator=,
+#kafka-console-producer    --topic test    --bootstrap-server a22d698eb5f9c453d9b360626c58ffbb-6611071.eu-west-1.elb.amazonaws.com:9071    --property parse.key=true    --property key.separator=,
+#kafka-console-consumer --bootstrap-server kafka.confluent.svc.cluster.local:9071 --topic test --consumer.config client-ssl.properties --from-beginning
+#kafka-console-consumer --bootstrap-server kafka.confluent.svc.cluster.local:9071 --topic test --from-beginning
+
+
+kafka-0.kafka.confluent.svc.cluster.local
+kafka-0.kafka.confluent.svc.cluster.local
 
 #curl -O https://confluent-for-kubernetes.s3-us-west-1.amazonaws.com/confluent-for-kubernetes-2.4.0.tar.gz
 #tar -xvf confluent-for-kubernetes-2.4.0.tar.gz \

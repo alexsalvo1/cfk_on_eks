@@ -3,3 +3,5 @@
 3-CfK/cfk-dir
 3-CfK/confluent-for-kubernetes
 3-CfK/sslcerts*
+3-CfK/jksPassword.txt
+3-CfK/client-ssl.properties

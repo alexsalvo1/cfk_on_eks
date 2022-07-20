@@ -1,7 +1,4 @@
 .DS_Store
-3-CfK/confluent-for-kubernetes-2.4.0.tar.gz
-3-CfK/cfk-dir
-3-CfK/confluent-for-kubernetes
-3-CfK/sslcerts*
-3-CfK/jksPassword.txt
-3-CfK/client-ssl.properties
+3-CfK/resources/sslcerts/
+3-CfK/resources/jksPassword.txt
+3-CfK/resources/client-ssl.properties

@@ -36,12 +36,14 @@ Requirement:
 ```
 
 Using "kubectl get svc", Add manually these DNS definitions:
-DNS name                    External IP
-b0.example.com              kafka-0-lb                  (sample: xxx.elb.amazonaws.com)
-b1.example.com              kafka-1-lb                  (sample: xxx.elb.amazonaws.com)
-b2.example.com              kafka-2-lb                  (sample: xxx.elb.amazonaws.com)
-kafka.example.com           kafka-bootstrap-lb          (sample: xxx.elb.amazonaws.com)
-controlcenter.example.com   controlcenter-bootstrap-lb  (sample: xxx.elb.amazonaws.com)
+
+DNS name  | External IP | Sample
+| :---: | :---: | :---:
+b0.example.com |              kafka-0-lb |                  (xxx.elb.amazonaws.com)
+b1.example.com |              kafka-1-lb |                  (yyy.elb.amazonaws.com)
+b2.example.com |              kafka-2-lb |                  (zzz.elb.amazonaws.com)
+kafka.example.com |           kafka-bootstrap-lb |          (www.elb.amazonaws.com)
+controlcenter.example.com |   controlcenter-bootstrap-lb |  (yyy.elb.amazonaws.com)
 
 Test Producer and Consumer
 
@@ -73,12 +75,14 @@ Requirement:
 ```
 
 Using "kubectl get svc", Add manually these DNS definitions:
-DNS name                    External IP
-b0.example.com              kafka-0-lb                  (sample: xxx.elb.amazonaws.com)
-b1.example.com              kafka-1-lb                  (sample: xxx.elb.amazonaws.com)
-b2.example.com              kafka-2-lb                  (sample: xxx.elb.amazonaws.com)
-kafka.example.com           kafka-bootstrap-lb          (sample: xxx.elb.amazonaws.com)
-controlcenter.example.com   controlcenter-bootstrap-lb  (sample: xxx.elb.amazonaws.com)
+
+DNS name  | External IP | Sample
+| :---: | :---: | :---:
+b0.example.com |              kafka-0-lb |                  (xxx.elb.amazonaws.com)
+b1.example.com |              kafka-1-lb |                  (yyy.elb.amazonaws.com)
+b2.example.com |              kafka-2-lb |                  (zzz.elb.amazonaws.com)
+kafka.example.com |           kafka-bootstrap-lb |          (www.elb.amazonaws.com)
+controlcenter.example.com |   controlcenter-bootstrap-lb |  (yyy.elb.amazonaws.com)
 
 Test Producer and Consumer
 

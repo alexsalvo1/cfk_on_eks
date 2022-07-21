@@ -86,7 +86,7 @@ Create the client-ssl.properties following this sample:
 
 ```console
 security.protocol=SSL
-ssl.truststore.location=sslcerts/client.truststore.jks
+ssl.truststore.location=sslcerts/client/truststore.jks
 ssl.truststore.password=<password>
 ```
 

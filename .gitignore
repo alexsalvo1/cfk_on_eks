@@ -1,4 +1,7 @@
 .DS_Store
-3-CfK/resources/sslcerts/
-3-CfK/resources/jksPassword.txt
+3-CfK/resources/sslcerts/ca/*.pem
+3-CfK/resources/sslcerts/ca/*.csr
+3-CfK/resources/sslcerts/client/*.jks
+3-CfK/resources/sslcerts/server/*.pem
+3-CfK/resources/sslcerts/server/*.csr
 3-CfK/resources/client-ssl.properties

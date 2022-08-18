@@ -11,13 +11,13 @@ source ./createEKSCluster.sh
 cd ../"3-CfK"
 source ./create-requirements.sh
 if [[ $1 == "basic" ]]; then
-    source ./createCfK.sh
+    source ./s1_createCfK.sh
 elif [[ $1 == "advanced" ]]; then
-    source ./createCfK_ssl.sh
-elif [[ 21 == "external_ssl" ]]; then
+    source ./s2_createCfK_adv.sh
+elif [[ $1 == "external_ssl" ]]; then
     source ./create-server-certificates.sh
     source ./create-client-truststore.sh ./resources/sslcerts/server/server.pem $2
-    source ./createCfK_ssl.sh
+    source ./s3_createCfK_ssl.sh
 else
     echo "Confluent for Kubernetes not Deployed"
 fi

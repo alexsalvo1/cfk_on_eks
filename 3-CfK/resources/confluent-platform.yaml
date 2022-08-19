@@ -30,11 +30,11 @@ spec:
   metricReporter:
     enabled: true
   listeners:
-      external:
-        externalAccess:
-          type: loadBalancer
-          loadBalancer:
-            domain: alexsalvo1.com
+    external:
+      externalAccess:
+        type: loadBalancer
+        loadBalancer:
+          domain: alexsalvo1.com
 ---
 apiVersion: platform.confluent.io/v1beta1
 kind: Connect

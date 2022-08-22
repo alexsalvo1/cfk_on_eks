@@ -31,6 +31,8 @@ spec:
       - confluent.cluster.link.enable=true
   metricReporter:
     enabled: true
+    tls:
+      enabled: true
   tls:
     secretRef: kafka-tls
   listeners:

@@ -6,6 +6,6 @@ kubectl create secret generic kafka-tls \
   --from-file=privkey.pem=resources/sslcerts/server/server-key.pem \
   -n $namespace
 
-kubectl apply -f ./resources/confluent-platform-SSL.yaml
-kubectl wait --for=condition=ready pods --all --namespace $namespace --timeout=1200s
+kubectl apply -f ./resources/confluent-platform-external-SSL.yaml
+#kubectl wait --for=condition=ready pods --all --namespace $namespace --timeout=1200s
 #kubectl apply -f ./resources/secure-producer-app-data.yaml -n $namespace

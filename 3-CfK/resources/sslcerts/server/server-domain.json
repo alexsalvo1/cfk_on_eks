@@ -14,7 +14,9 @@
     "zookeeper.destination.svc.cluster.local",
     "*.zookeeper.destination.svc.cluster.local",
     "zookeeper.confluent.svc.cluster.local",
-    "*.zookeeper.confluent.svc.cluster.local"
+    "*.zookeeper.confluent.svc.cluster.local",
+    "connect.confluent.svc.cluster.local",
+    "*.connect.confluent.svc.cluster.local"
   ],
   "key": {
     "algo": "rsa",

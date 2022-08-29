@@ -42,8 +42,8 @@ DNS name  | External IP | Sample
 b0.example.com |              kafka-0-lb |                  (xxx.elb.amazonaws.com)
 b1.example.com |              kafka-1-lb |                  (yyy.elb.amazonaws.com)
 b2.example.com |              kafka-2-lb |                  (zzz.elb.amazonaws.com)
-kafka.example.com |           kafka-bootstrap-lb |          (www.elb.amazonaws.com)
-controlcenter.example.com |   controlcenter-bootstrap-lb |  (yyy.elb.amazonaws.com)
+kafka.example.com |           kafka-bootstrap-lb |          (xyz.elb.amazonaws.com)
+controlcenter.example.com |   controlcenter-bootstrap-lb |  (zyx.elb.amazonaws.com)
 
 Test Producer and Consumer
 
@@ -83,8 +83,8 @@ DNS name  | External IP | Sample
 b0.example.com |              kafka-0-lb |                  (xxx.elb.amazonaws.com)
 b1.example.com |              kafka-1-lb |                  (yyy.elb.amazonaws.com)
 b2.example.com |              kafka-2-lb |                  (zzz.elb.amazonaws.com)
-kafka.example.com |           kafka-bootstrap-lb |          (www.elb.amazonaws.com)
-controlcenter.example.com |   controlcenter-bootstrap-lb |  (yyy.elb.amazonaws.com)
+kafka.example.com |           kafka-bootstrap-lb |          (xyz.elb.amazonaws.com)
+controlcenter.example.com |   controlcenter-bootstrap-lb |  (zyx.elb.amazonaws.com)
 
 Test Producer and Consumer
 
@@ -132,8 +132,8 @@ DNS name  | External IP | Sample
 b0.example.com |              kafka-0-lb |                  (xxx.elb.amazonaws.com)
 b1.example.com |              kafka-1-lb |                  (yyy.elb.amazonaws.com)
 b2.example.com |              kafka-2-lb |                  (zzz.elb.amazonaws.com)
-kafka.example.com |           kafka-bootstrap-lb |          (www.elb.amazonaws.com)
-controlcenter.example.com |   controlcenter-bootstrap-lb |  (yyy.elb.amazonaws.com)
+kafka.example.com |           kafka-bootstrap-lb |          (xyz.elb.amazonaws.com)
+controlcenter.example.com |   controlcenter-bootstrap-lb |  (zyx.elb.amazonaws.com)
 
 Test Producer and Consumer
 

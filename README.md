@@ -25,7 +25,7 @@ Deploy/undeploy Confluent for Kubernetes on Amazon Elastic Kubernetes Service
 
 ## Scenario 2: Kubernetes cluster admin and the CFK user are different person
 
-### Deploy EKS Cluster and Confluent Platform (sdvanced)
+### Deploy EKS Cluster and Confluent Platform (advanced)
 
 Requirement:
 
@@ -49,7 +49,9 @@ Test Producer and Consumer
 
 ```console
 kafka-console-producer --topic test --bootstrap-server kafka.alexsalvo1.com:9092 --property parse.key=true --property key.separator=,
+```
 
+```console
 kafka-console-consumer --bootstrap-server kafka.alexsalvo1.com:9092 --topic test --from-beginning
 ```
 
@@ -96,7 +98,9 @@ ssl.truststore.password=<password>
 
 ```console
 kafka-console-producer --topic test --bootstrap-server kafka.alexsalvo1.com:9092 --property parse.key=true --property key.separator=, --producer.config client-ssl.properties
+```
 
+```console
 kafka-console-consumer --bootstrap-server kafka.alexsalvo1.com:9092 --topic test --consumer.config client-ssl.properties --from-beginning
 ```
 
@@ -143,7 +147,9 @@ ssl.truststore.password=<password>
 
 ```console
 kafka-console-producer --topic test --bootstrap-server kafka.alexsalvo1.com:9092 --property parse.key=true --property key.separator=, --producer.config client-ssl.properties
+```
 
+```console
 kafka-console-consumer --bootstrap-server kafka.alexsalvo1.com:9092 --topic test --consumer.config client-ssl.properties --from-beginning
 ```
 

@@ -9,6 +9,7 @@ export vpc_name=eksVPC-CfK
 export eksClusterName=eks-cluster-cfk
 export namespace=confluent
 export cfk_dir=cfk-dir
+export owner_email=salessandro@confluent.io
 
 echo "Default Region: $region"
 echo "AZ 1: $az_1"
@@ -18,3 +19,4 @@ echo "VPC name: $vpc_name"
 echo "Cluster name: $eksClusterName"
 echo "Namespace: $namespace"
 echo "CfK dir: $cfk_dir"
+echo "Owner email: $owner_email"

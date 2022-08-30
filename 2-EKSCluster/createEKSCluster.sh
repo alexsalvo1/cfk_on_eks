@@ -10,7 +10,7 @@ eksctl create cluster \
   --vpc-public-subnets $subnet_public_az_1,$subnet_public_az_2,$subnet_public_az_3 \
   --vpc-private-subnets $subnet_private_az_1,$subnet_private_az_2,$subnet_private_az_3 \
   --without-nodegroup
-  --tags owner_email=salessandro@confluent.io
+  --tags owner_email=$owner_email
 
 echo "EKS Cluster name: $eksClusterName CREATED"
 

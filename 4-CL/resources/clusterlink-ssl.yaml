@@ -1,0 +1,20 @@
+apiVersion: platform.confluent.io/v1beta1
+kind: ClusterLink
+metadata:
+  name: clusterlinkus-demo2
+  namespace: confluent-2
+spec:
+  destinationKafkaCluster:
+    kafkaRestClassRef:
+      name: destination-kafka-rest
+      namespace: confluent-2
+  sourceKafkaCluster:
+    bootstrapEndpoint: kafka.confluent.svc.cluster.local:9071
+    tls:
+      enabled: true
+      secretRef: kafka-tls
+    kafkaRestClassRef:
+      name: source-kafka-rest
+      namespace: confluent-2
+  mirrorTopics:
+  - name: jms-topic

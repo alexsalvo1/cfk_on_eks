@@ -191,4 +191,4 @@ spec:
   kafkaClusterRef:
     name: kafka
   kafkaRest:
-    endpoint: http://kafka.source.svc.cluster.local:8090
+    endpoint: http://kafka.confluent.svc.cluster.local:8090

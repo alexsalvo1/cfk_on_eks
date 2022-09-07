@@ -7,12 +7,12 @@ kubectl create secret generic kafka-tls \
   --from-file=privkey.pem=resources/sslcerts/server/server-key.pem \
   --namespace $namespace
 
+
+cd ../4-CL
+
 kubectl create secret generic rest-credential \
   --from-file=basic.txt=resources/rest-credential.txt \
   --namespace $namespace
-
-
-cd ../4-CL
 
 kubectl create secret generic password-encoder-secret \
   --from-file=password_encoder_secret=resources/password-encoder-secret.txt \

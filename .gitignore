@@ -4,3 +4,6 @@
 3-CfK/resources/sslcerts/client/*.jks
 3-CfK/resources/sslcerts/server/*.pem
 3-CfK/resources/sslcerts/server/*.csr
+config1.sh
+config2.sh
+3-CfK/resources/confluent-platform-full-SSL-2.yaml

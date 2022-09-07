@@ -9,7 +9,7 @@ export vpc_name=eksVPC-CfK
 export eksClusterName=eks-cluster-cfk
 export namespace=confluent
 export cfk_dir=cfk-dir
-export owner_email=salessandro@confluent.io
+export owner_email=replace-me@company.com
 
 echo "Default Region: $region"
 echo "AZ 1: $az_1"

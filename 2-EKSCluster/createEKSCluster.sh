@@ -9,7 +9,7 @@ eksctl create cluster \
   --version 1.22 \
   --vpc-public-subnets $subnet_public_az_1,$subnet_public_az_2,$subnet_public_az_3 \
   --vpc-private-subnets $subnet_private_az_1,$subnet_private_az_2,$subnet_private_az_3 \
-  --without-nodegroup
+  --without-nodegroup \
   --tags owner_email=$owner_email
 
 echo "EKS Cluster name: $eksClusterName CREATED"

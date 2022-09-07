@@ -181,3 +181,14 @@ spec:
     type: loadBalancer
     loadBalancer:
       domain: alexsalvo1.com
+---
+apiVersion: platform.confluent.io/v1beta1
+kind: KafkaRestClass
+metadata:
+  name: source-kafka-rest
+  namespace: confluent
+spec:
+  kafkaClusterRef:
+    name: kafka
+  kafkaRest:
+    endpoint: http://kafka.source.svc.cluster.local:8090

@@ -3,6 +3,7 @@
 source ./config.sh
 
 cd "3-CfK"
+source ./delete-requirements.sh
 if [[ $1 == "basic" ]]; then
     source ./s1_deleteCfK.sh 
 elif [[ $1 == "advanced" ]]; then

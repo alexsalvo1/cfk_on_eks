@@ -5,4 +5,4 @@
 
 kubectl delete -f ./resources/confluent-platform-full-SSL.yaml
 
-kubectl delete secret kafka-tls
+kubectl delete secret kafka-tls --namespace $namespace 

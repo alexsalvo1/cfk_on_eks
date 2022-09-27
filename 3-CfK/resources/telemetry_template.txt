@@ -1,0 +1,5 @@
+api.key=<cloud_key>
+api.secret=<cloud_secret>
+proxy.url=<proxy_url>
+proxy.username=<proxy_username>
+proxy.password=<proxy_password>

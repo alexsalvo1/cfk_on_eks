@@ -8,3 +8,5 @@ config1.sh
 config2.sh
 3-CfK/resources/confluent-platform-full-SSL-2.yaml
 3-CfK/resources/sslcerts/server/server-domain-2.json
+3-CfK/resources/license.txt
+3-CfK/resources/confluent-platform-update-license.yaml
